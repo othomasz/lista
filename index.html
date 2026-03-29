@@ -1,81 +1,224 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
+<meta charset="UTF-8">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+
 <style>
-    body {
-        margin: 0;
-        font-family: "JetBrains Mono", monospace;
-    }  
-    .page {
-        border-top: 8px solid #D6FFEC;
-        border-bottom: 8px solid #D6FFEC;
-        text-align: center;
-        height: 100vh;
-        box-sizing: border-box;
-    }  
+body {
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+}
 
-    .header_bg {
-        display: flex;
-        align-items: center;
-        background-color: #3CF3C3;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }  
+.page {
+    border-top: 8px solid #D6FFEC;
+    border-bottom: 8px solid #D6FFEC;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+	min-height: 100vh;
+}
 
-    .header {
-        color: #053829;
-        width: 100%;
-        max-width: 700px;
-        padding: 25px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.header_bg {
+    display: flex;
+    align-items: center;
+    background-color: #3CF3C3;
+    justify-content: center;
+}
 
-    .header h1 {
-        margin: 0;
-        font-size: 2.5em;
-        font-weight: 800;
-    }
+.header {
+    color: #053829;
+    width: 100%;
+    max-width: 900px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
 
-    .header p {
-        background-color: #D6FFEC;
-        border-radius: 2.4em;
-        margin: 0;
-        font-size: 1.0em;
-        font-weight: 700;
-        padding: 0.0em 0.5em;
+.header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+.header p {
+    background-color: #D6FFEC;
+    border-radius: 2em;
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding: 2px 10px;
+}
+
+.numero {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* CONTEÚDO */
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+/* 2 colunas */
+.questoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.questao {
+    break-inside: avoid;
+    font-size: 14px;
+}
+
+.alternativas {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/* GABARITO */
+.gabarito {
+    margin-top: 50px;
+}
+
+.gabarito h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: center;
+    width: 35px;
+}
+
+/* BOTÃO */
+.botao {
+    margin: 30px auto;
+    display: block;
+    padding: 10px 20px;
+    font-family: inherit;
+    border: none;
+    background: #3CF3C3;
+    cursor: pointer;
+    font-weight: bold;
+	border-radius: 8px;
+}
+
+/* impressão */
+@media print {
+    .botao {
+        display: none;
     }
-    .numero {
-        margin: 0;
-        font-size: 3.0em;
-        font-weight: 800;
-    }
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+}
 </style>
 
 </head>
-<body>
-    <div class="page">
-        <div class="header_bg">
-            <div class="header">
-                <div class="row">
-                    <p>• lista de exercícios</p>
-                    <h1>Análise Combinatória</h1>
-                </div>
-                <h2 class="numero">#01</h2>
-            </div>
-            
-    </div>
-    <div class="content">
-                <p>1. Quantas palavras podem ser formadas com as letras da palavra “COMBINATÓRIA”?</p>
-        </div>
-</body>
 
+<body>
+
+<div class="page">
+
+<div class="header_bg">
+    <div class="header">
+        <div class="row">
+            <p>• lista de exercícios</p>
+            <h1>Análise Combinatória</h1>
+        </div>
+        <h2 class="numero">#01</h2>
+    </div>
+</div>
+
+<div class="content">
+
+<div class="questoes">
+
+<div class="questao">
+<b>1.</b> Quantas palavras podem ser formadas com “COMBINATÓRIA”?
+<div class="alternativas">
+A) 1000<br>
+B) 2000<br>
+C) 5000<br>
+D) 10000<br>
+E) 20000
+</div>
+</div>
+
+<div class="questao">
+<b>2.</b> De quantas formas podemos escolher 2 pessoas de um grupo de 5?
+<div class="alternativas">
+A) 5<br>
+B) 10<br>
+C) 15<br>
+D) 20<br>
+E) 25
+</div>
+</div>
+
+<div class="questao">
+<b>3.</b> Quantos anagramas tem a palavra “CASA”?
+<div class="alternativas">
+A) 6<br>
+B) 12<br>
+C) 24<br>
+D) 48<br>
+E) 120
+</div>
+</div>
+
+<div class="questao">
+<b>4.</b> Permutação de 4 elementos:
+<div class="alternativas">
+A) 12<br>
+B) 24<br>
+C) 36<br>
+D) 48<br>
+E) 60
+</div>
+</div>
+
+</div>
+
+<!-- GABARITO -->
+<div class="gabarito">
+<h2>Gabarito</h2>
+
+<table>
+<tr>
+<th>1</th><th>2</th><th>3</th><th>4</th>
+</tr>
+<tr>
+<td>D</td><td>B</td><td>B</td><td>B</td>
+</tr>
+</table>
+</div>
+
+<button class="botao" onclick="salvarPDF()">Salvar em PDF</button>
+
+</div>
+
+</div>
+
+<script>
+function salvarPDF() {
+    window.print();
+}
+</script>
+
+</body>
 </html>
