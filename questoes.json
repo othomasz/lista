@@ -1,0 +1,66 @@
+[
+  {
+    "tipo": "itens",
+    "pergunta": "Escreve o tipo de cada uma das seguintes matrizes:",
+    "itens": [
+	  "$\\begin{pmatrix} 1 \\\\ -7 \\\\ 4 \\end{pmatrix}$",
+	  "$\\begin{pmatrix} 1 & 3  \\\\ -7 & 2  \\\\ 4 & 2 \\end{pmatrix}$",
+	  "$\\begin{bmatrix} 3 & -4 & 2 & 9 \\end{bmatrix}$",
+      "$\\begin{pmatrix} 1 & 5 & 7 \\\\ 3 & 1 & 4 \\\\ 3 & 4 & 4 \\end{pmatrix}$",
+      "$\\begin{pmatrix} 1 & 4  \\\\ -7 & 2 \\end{pmatrix}$"
+    ],
+    "resposta": "a)3x1 b)3x2 c)1x4 d)3x3 e)2x2"
+  },
+  {
+    "tipo": "itens",
+    "pergunta": "Calcule:",
+    "itens": [
+      "$A=(a_{ij})_{3x2}$, em que $a_{ij} = j-2i$",
+	  "$B=(b_{ij})_{2x3}$, em que $b_{ij} = i^2$",
+	  "$C$ é uma matriz quadrada de ordem 2, sendo que $c_{ij} = 3i+j-1$"
+    ],
+    "resposta": "a) 16; b) 8; c) 4"
+  },
+  {
+    "tipo": "aberta",
+    "pergunta": "Sendo $A=\\begin{pmatrix} 3 & 2 \\\\ -1 & 4 \\end{pmatrix}$, determine o valor de $A^{t} - I_{2}$",
+    "itens": [
+      "$A=(a_{ij})_{3x2}$, em que $a_{ij} = j-2i$",
+	  "$B=(b_{ij})_{2x3}$, em que $b_{ij} = i^2$",
+	  "$C$ é uma matriz quadrada de ordem 2, sendo que $c_{ij} = 3i+j-1$"
+    ],
+    "resposta": "a) 16; b) 8; \n c) $\\begin{pmatrix} 3 & 2 \\\\ -1 & 4 \\end{pmatrix}$"
+  },
+   {
+    "tipo": "itens",
+    "pergunta": "Seja $A=\\begin{pmatrix} 0 & -1 \\\\ 2 & 3 \\\\ -2 & 4 \\end{pmatrix}$ e $B=\\begin{pmatrix} 3 & 1 &  2 \\\\ -1 & -2 & 4 \\end{pmatrix}$, determine a matriz:",
+    "itens": [
+      "$A^t$",
+	  "$B^t$",
+	  "$A^{t}-B$",
+	  "$-2A+3B^t$"
+    ],
+    "resposta": "a) 16; b) 8; c) 4"
+  },
+    {
+    "tipo": "aberta",
+    "pergunta": "Uma matriz quadrada $A$ é dita simétrica se $A=A^t$ e antissimétrica se $A=-A^t$. Dessa forma, dê um exemplo de matiz simétrica e um de matriz antissimétrica.",
+    "resposta": "Função do tipo f(x)=a^x"
+  },
+  {
+    "tipo": "multipla",
+    "pergunta": "(ENEM) O metrô de um município oferece dois tipos de tíquetes com colorações diferentes, azul e vermelha, sendo vendidos em cartelas, cada qual com nove tíquetes da mesma cor e mesmo valor unitário. Duas cartelas de tíquetes azuis e uma cartela de tíquetes vermelhos são vendidas por R$ 32,40. Sabe-se que o preço de um tíquete azul menos o preço de um tíquete vermelho é igual ao preço de um tíquete vermelho mais cinco centavos. \n Qual o preço, em real, de uma cartela de tíquetes vermelhos?",
+    "alternativas": ["4,68", "6,30", "9,30", "10,50", "10,65"],
+    "resposta": "B"
+  },
+     {
+    "tipo": "itens",
+    "pergunta": "Resolva os sistemas lineares, pela regra de Crammer.",
+    "itens": [
+      "$\\left\\{\\begin{matrix} -2x+y=1 \\\\ 4x+2y=2 \\end{matrix}\\right.$",
+	  "$\\left\\{\\begin{matrix} 3x+2y=7 \\\\ 5x-y=4 \\end{matrix}\\right.$",
+	  "$\\left\\{\\begin{matrix} x+2y+3z=6 \\\\ 2x-y+z=3 \\\\ 3x+y-2z=1 \\end{matrix}\\right.$"
+    ],
+    "resposta": "a) 16; b) 8; c) 4"
+  }
+]
