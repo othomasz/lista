@@ -5,7 +5,7 @@
     "itens": [
 	  "$\\begin{pmatrix} 1 \\\\ -7 \\\\ 4 \\end{pmatrix}$",
 	  "$\\begin{pmatrix} 1 & 3  \\\\ -7 & 2  \\\\ 4 & 2 \\end{pmatrix}$",
-	  "$\\begin{bmatrix} 3 & -4 & 2 & 9 \\end{bmatrix}$",
+	  "$\\begin{pmatrix} 3 & -4 & 2 & 9 \\end{pmatrix}$",
       "$\\begin{pmatrix} 1 & 5 & 7 \\\\ 3 & 1 & 4 \\\\ 3 & 4 & 4 \\end{pmatrix}$",
       "$\\begin{pmatrix} 1 & 4  \\\\ -7 & 2 \\end{pmatrix}$"
     ],
@@ -19,7 +19,7 @@
 	  "$B=(b_{ij})_{2x3}$, em que $b_{ij} = i^2$",
 	  "$C$ é uma matriz quadrada de ordem 2, sendo que $c_{ij} = 3i+j-1$"
     ],
-    "resposta": "a) 16; b) 8; c) 4"
+    "resposta": "a)$\\begin{pmatrix} -1 & 0 \\\\ -3 & -2 \\\\ -5 & -4 \\end{pmatrix}$  b)$\\begin{pmatrix} 1 & 1 & 1 \\\\ 4 & 4 & 4 \\end{pmatrix}$ c)$\\begin{pmatrix} 3 & 4 \\\\ 6 & 7 \\end{pmatrix}$ "
   },
   {
     "tipo": "aberta",
@@ -29,7 +29,7 @@
 	  "$B=(b_{ij})_{2x3}$, em que $b_{ij} = i^2$",
 	  "$C$ é uma matriz quadrada de ordem 2, sendo que $c_{ij} = 3i+j-1$"
     ],
-    "resposta": "a) 16; b) 8; \n c) $\\begin{pmatrix} 3 & 2 \\\\ -1 & 4 \\end{pmatrix}$"
+    "resposta": " $\\begin{pmatrix} 2 & -1 \\\\ 2 & 3 \\end{pmatrix}$"
   },
    {
     "tipo": "itens",
@@ -40,12 +40,12 @@
 	  "$A^{t}-B$",
 	  "$-2A+3B^t$"
     ],
-    "resposta": "a) 16; b) 8; c) 4"
+    "resposta": "a) $\\begin{pmatrix} 0 & 2 & -2 \\\\ -1 & 3 & 4 \\end{pmatrix}$ b) $\\begin{pmatrix} 3 & -1 \\\\ 1 & -2  \\\\ 2 & 4 \\end{pmatrix}$ c) $\\begin{pmatrix} -3 & 1 & -4 \\\\ 0 & 5 & 0 \\end{pmatrix}$ d) $\\begin{pmatrix} 9 & -1 \\\\ -1 & -12 \\\\ 10 & 4 \\end{pmatrix}$ "
   },
     {
     "tipo": "aberta",
     "pergunta": "Uma matriz quadrada $A$ é dita simétrica se $A=A^t$ e antissimétrica se $A=-A^t$. Dessa forma, dê um exemplo de matiz simétrica e um de matriz antissimétrica.",
-    "resposta": "Função do tipo f(x)=a^x"
+    "resposta": "xxx"
   },
   {
     "tipo": "multipla",
@@ -61,6 +61,6 @@
 	  "$\\left\\{\\begin{matrix} 3x+2y=7 \\\\ 5x-y=4 \\end{matrix}\\right.$",
 	  "$\\left\\{\\begin{matrix} x+2y+3z=6 \\\\ 2x-y+z=3 \\\\ 3x+y-2z=1 \\end{matrix}\\right.$"
     ],
-    "resposta": "a) 16; b) 8; c) 4"
+    "resposta": "b) $S=\\left\\{ \\left( \\frac{15}{13},\\frac{23}{13} \\right) \\right\\}$ c) $S=\\left\\{ \\left( \\frac{16}{15},\\frac{7}{15}, \\frac{4}{3} \\right) \\right\\}$"
   }
 ]
