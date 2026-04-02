@@ -1,296 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']]
-  }
-};
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<style>
-.itens {
-    margin-left: 15px;
-    margin-top: 5px;
-}
-body {
-    margin: 0;
-    font-family: "JetBrains Mono", monospace;
-}
-
-.page {
-    border-top: 8px solid #D6FFEC;
-    border-bottom: 8px solid #D6FFEC;
-    box-sizing: border-box;
-    padding-bottom: 40px;
-	min-height: 100vh;
-}
-
-/* HEADER */
-
-.header_bg {
-    display: flex;
-    align-items: center;
-    background-color: #3CF3C3;
-    justify-content: center;
-}
-
-.header {
-    color: #053829;
-    width: 100%;
-    max-width: 700px;
-    padding: 25px;
-    display: flex;
-    justify-content: space-between;
-	align-items: center;
-
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 2.2em;
-    font-weight: 800;
-}
-
-.header p {
-    background-color: #D6FFEC;
-    border-radius: 2em;
-    margin: 0;
-    font-size: 0.9em;
-    font-weight: 700;
-    padding: 2px 10px;
-}
-
-.numero {
-    margin: 0;
-    font-size: 2.5em;
-    font-weight: 800;
-}
-
-.row {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-/* CONTEÚDO */
-.content {
-    max-width: 600px;
-    margin: 30px auto;
-}
-
-/* 1 coluna */
-.questoes {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 coluna no site */
-    gap: 20px;
-}
-
-.questao {
-    break-inside: avoid;
-    font-size: 0.9em;
-}
-
-.questao b {
-    font-size: 16px;
-}
-
-.alternativas {
-    margin-left: 1em;
-    margin-top: 5px;
-}
-
-/* GABARITO */
-.gabarito {
-    margin-top: 50px;
-}
-
-.gabarito h2 {
-    margin-bottom: 10px;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-td, th {
-    border: 1px solid black;
-    padding: 6px;
-    text-align: center;
-    min-width: 35px;
-}
-
-/* BOTÃO */
-.botao {
-    margin: 30px auto;
-    display: block;
-    padding: 10px 20px;
-    font-family: inherit;
-    border: none;
-    background: #3CF3C3;
-    cursor: pointer;
-    font-weight: bold;
-	border-radius: 8px;
-}
-/* impressão */
-@page {
-    size: A4;
-    margin: 0;
-}
-
-@media print {
-    body {
-        margin: 0;
-    }
-
-    .page {
-        width: 210mm;
-        min-height: 297mm;
-        margin: 0;
-    }
-
-    .botao {
-        display: none;
-    }
-	
-	.questoes {
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 20px;
-		position: relative;
-	}
-
-	
-	.content {
-	    margin: 10mm auto;
-	}
-}
-
-
-</style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="page">
-
-<div class="header_bg">
-    <div class="header">
-        <div class="row">
-            <p>• lista de exercícios</p>
-            <h1>Análise Combinatória</h1>
+    <div class="page">
+        <div class="header_bg">
+            <div class="header">
+                <div class="row">
+                    <p>• lista de exercícios</p>
+                    <h1>Matrizes, Determinantes e Sistemas Lineares</h1>
+                </div>
+                <h2 class="numero">#01</h2>
+            </div>
         </div>
-        <h2 class="numero">#01</h2>
+
+        <div class="content">
+
+            <div class="questoes"></div>
+
+            <!-- GABARITO -->
+            <div class="page-break"></div>
+            <div class="gabarito">
+                <h2>Gabarito</h2>
+                <!-- Respostas serão geradas dinamicamente -->
+            </div>
+
+            <button class="botao" onclick="salvarPDF()">Salvar em PDF</button>
+
+        </div>
     </div>
-</div>
 
-<div class="content">
-
-<div class="questoes">
-
-</div>
-
-<!-- GABARITO -->
-<div class="gabarito">
-<h2>Gabarito</h2>
-
-<table>
-<tr>
-<th>1</th><th>2</th><th>3</th><th>4</th>
-</tr>
-<tr>
-<td>D</td><td>B</td><td>B</td><td>B</td>
-</tr>
-</table>
-</div>
-
-<button class="botao" onclick="salvarPDF()">Salvar em PDF</button>
-
-</div>
-
-</div>
 </body>
+
 <script>
-function salvarPDF() {
-    window.print();
-}
-
-async function carregarQuestoes() {
-    const resposta = await fetch("questoes.json");
-    const questoes = await resposta.json();
-
-    const container = document.querySelector(".questoes");
-    container.innerHTML = "";
-
-    questoes.forEach((q, i) => {
-        const div = document.createElement("div");
-        div.className = "questao";
-
-        let perguntaFormatada = q.pergunta.replace(/\n/g, "<br>");
-        let html = `<b>${i+1}.</b> ${perguntaFormatada}`;
-
-        // MÚLTIPLA ESCOLHA
-        if (q.tipo === "multipla") {
-            html += `<div class="alternativas">`;
-            const letras = ["A","B","C","D","E"];
-
-            q.alternativas.forEach((alt, j) => {
-                html += `${letras[j]}) ${alt}<br>`;
-            });
-
-            html += `</div>`;
-        }
-
-        // QUESTÃO COM ITENS a), b), c)
-        if (q.tipo === "itens") {
-            html += `<div class="itens">`;
-            const letras = ["a","b","c","d","e","f"];
-
-            q.itens.forEach((item, j) => {
-                html += `${letras[j]}) ${item}<br>`;
-            });
-
-            html += `</div>`;
-        }
-
-        div.innerHTML = html;
-        container.appendChild(div);
-    });
-
-    gerarGabarito(questoes);
-
-    if (window.MathJax) {
-        MathJax.typesetPromise();
+    function salvarPDF() {
+        window.print();
     }
-}
 
-function gerarGabarito(questoes) {
-    const tabela = document.querySelector(".gabarito table");
+    async function carregarQuestoes() {
+        const resposta = await fetch("questoes.json");
+        const questoes = await resposta.json();
 
-    let header = "<tr>";
-    let respostas = "<tr>";
+        const container = document.querySelector(".questoes");
+        container.innerHTML = "";
 
-    questoes.forEach((q, i) => {
-        header += `<th>${i+1}</th>`;
-        respostas += `<td>${q.resposta || "-"}</td>`;
-    });
+        questoes.forEach((q, i) => {
+            const div = document.createElement("div");
+            div.className = "questao";
 
-    header += "</tr>";
-    respostas += "</tr>";
+            let perguntaFormatada = q.pergunta.replace(/\n/g, "<br>");
 
-    tabela.innerHTML = header + respostas;
-}
+            // Inserir imagens
+            if (q.imagens) {
+                let imgIndex = 0;
+                perguntaFormatada = perguntaFormatada.replace(/\\img/g, () => {
+                    if (q.imagens[imgIndex]) {
+                        return `<div class="imagem-questao">
+                                    <img src="${q.imagens[imgIndex++]}" />
+                                </div>`;
+                    }
+                    return "";
+                });
+            }
+            let html = `<b>Questão ${i + 1}:</b> ${perguntaFormatada}`;
 
-carregarQuestoes();
+            // MÚLTIPLA ESCOLHA
+            if (q.tipo === "multipla") {
+                html += `<div class="alternativas">`;
+                const letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+                q.alternativas.forEach((alt, j) => {
+                    html += `<div class="alternativa"><div class="letra">${letras[j]}</div>${alt}</div>`;
+                });
+
+                html += `</div>`;
+            }
+
+            // QUESTÃO COM ITENS a), b), c)
+            if (q.tipo === "itens") {
+                html += `<div class="itens">`;
+                const letras = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+                q.itens.forEach((item, j) => {
+                    html += `<div class="item">${letras[j]}) ${item}</div>`;
+                });
+
+                html += `</div>`;
+            }
+
+            div.innerHTML = html;
+            container.appendChild(div);
+        });
+
+        gerarGabarito(questoes);
+
+        if (window.MathJax) {
+            MathJax.typesetPromise();
+        }
+    }
+
+    function gerarGabarito(questoes) {
+        const gabaritoDiv = document.querySelector(".gabarito");
+
+        const listaAntiga = gabaritoDiv.querySelector(".gabarito-respostas");
+        if (listaAntiga) {
+            listaAntiga.remove();
+        }
+
+        const respostasHTML = questoes
+            .map((q, i) => `<div class="resposta"><span class="numero">${i + 1}-</span> <span class="texto">${q.resposta || "-"}</span></div>`)
+            .join("");
+
+        gabaritoDiv.insertAdjacentHTML("beforeend", `<div class="gabarito-respostas">${respostasHTML}</div>`);
+    }
+
+    carregarQuestoes();
 </script>
+
 </html>
