@@ -1,0 +1,94 @@
+[
+  {
+    "pergunta": "Um homem vai a um restaurante disposto a comer um só prato de carne e uma só sobremesa. O cardápio oferece oito pratos distintos de carne e cinco pratos diferentes de sobremesa. De quantas formas pode o homem fazer sua refeição?",
+    "resposta": "40"
+  },
+  {
+    "pergunta": "Um homem vai a um restaurante disposto a comer um só prato de carne e uma só sobremesa. O cardápio oferece oito pratos distintos de carne e cinco pratos diferentes de sobremesa. De quantas formas pode o homem fazer sua refeição?",
+    "resposta": "40"
+  },
+  {
+    "pergunta": "Uma moça possui 5 blusas e 6 saias. De quantas formas ela pode vestir uma blusa e uma saia?",
+    "resposta": "30"
+  },
+  {
+    "pergunta": "Num banco de automóvel o assento pode ocupar 6 posições diferentes e o encosto 5 posições, independentemente da posição do assento. Combinando assento e encosto, quantas posições diferentes esse banco pode assumir?",
+    "resposta": "30"
+  },
+  {
+    "pergunta": "Um edifício tem 8 portas. De quantas formas uma pessoa poderá entrar no edifício e sair por uma porta diferente da que usou para entrar?",
+    "resposta": "56"
+  },
+  {
+    "pergunta": "Num concurso com 12 participantes, se nenhum puder ganhar mais que um prêmio, de quantas maneiras poderão ser distribuídos um primeiro e um segundo prêmios?",
+    "resposta": "132"
+  },
+  {
+    "pergunta": "Um automóvel é oferecido pelo fabricante em 7 cores diferentes, podendo o comprador optar entre os motores 2000 cc e 4000 cc. Sabendo-se que os automóveis são fabricados nas versões “standard”, “luxo” e “superluxo”, quantas são as alternativas do comprador? ",
+    "resposta": "42"
+  },
+  {
+    "pergunta": "De quantas formas podemos responder a 12 perguntas de um questionário, cujas respostas para cada pergunta são: sim ou não?",
+    "resposta": "$2^{12}$ = 4096"
+  },
+  {
+    "pergunta": "Uma prova consta de 20 testes do tipo verdadeiro ou falso. De quantas formas uma pessoa poderá responder aos 20 testes?",
+    "resposta": "$2^{20}$ = 1048576"
+  },
+  {
+    "pergunta": "Uma loteria (semelhante à loteria esportiva) apresenta 10 jogos, cada um com 4 possíveis resultados. Usando a aproximação $2^{10} \\cong 10^{3}$, qual é o número total deresultados possíveis?",
+    "resposta": "1000000"
+  },
+  {
+    "pergunta": "Em um computador digital, um bit é um dos algarismos 0 ou 1 e uma palavra é uma sucessão de bits. Qual é o número de palavras distintas de 32 bits?",
+    "resposta": "$2^{32}$ = 4294967296"
+  },
+  {
+    "pergunta": "Uma sala tem 10 portas. De quantas maneiras diferentes esta sala pode estar com pelo menos uma porta aberta?",
+    "resposta": "1023"
+  },
+  {
+    "pergunta": "De quantas maneiras diferentes um professor poderá escolher um ou mais estudantes de um grupo de 6 estudantes?",
+    "resposta": "63"
+  },
+  {
+    "pergunta": "De um grupo de 5 pessoas, de quantas maneiras distintas posso convidar uma ou mais para jantar?",
+    "resposta": "31"
+  },
+  {
+    "pergunta": "Quantos anagramas podemos formar, digitando ao acaso em 6 tecIas (escolhidas entre as 26 existentes) num teclado?",
+    "resposta": "$26^6$ = 308915776"
+  },
+  {
+    "pergunta": "Num concurso para preenchimento de uma cátedra, apresentam-se 3 candidatos. A comissão julgadora é constituída de 5 membros, devendo cada examinador escolher exatamente um candidato. De quantos modos os votos desses examinadores podem ser dados?",
+    "resposta": "243"
+  },
+  {
+    "pergunta": "Um mágico se apresenta em público vestindo calça e paletó de cores diferentes. Para que ele possa se apresentar em 24 sessões com conjuntos diferentes, qual é o número mínimo de peças (número de paletós mais número de calças) de que ele precisa?",
+    "resposta": "10"
+  },
+  {
+    "pergunta": "Seis dados são lançados simultaneamente. Quantas sequências de resultados são possíveis, se considerarmos cada elemento da sequência como o número obtido em cada dado?",
+    "resposta": "46656"
+  },
+  {
+    "pergunta": "O sistema telefônico de São Paulo utiliza oito (8) dígitos para designar os diversos telefones. Supondo que o primeiro dígito seja sempre dois (2) e que o dígito zero (0) não seja utilizado para designar estações (2º e 3º dígitos), quantos números de telefones diferentes poderemos ter?",
+    "resposta": "8100000"
+  },
+  {
+    "pergunta": "As letras em código morse são formadas por sequências de traços (-) e pontos ( ⋅ ), sendo permitidas repetições. Por exemplo: (-; ⋅; -; -; ⋅; ⋅). Quantas letras podem ser representadas:",
+    "itens": [
+      " usando exatamente 3 símbolos",
+      " usando no máximo 8 símbolos?"
+    ],
+    "resposta": "a) $2^3$ = 8 \n b) $2^1 + 2^2 + 2^3 + 2^4 + 2^5 + 2^6 + 2^7 + 2^8$ = 510"
+  },
+  {
+    "pergunta": "Existem apenas dois modos de atingir uma cidade X partindo de uma outra A. Um é ir até uma cidade intermediária B e de lá atingir X; o outro é ir até C e de lá chegar a X.\\img{img/caminhos.svg} Existem 10 estradas ligando A e B; 12 ligando B a X; 5 ligando A a C; 8 ligando C a X; nenhuma ligação direta entre B e C e nenhuma ligação direta entre A e X. Qual o número de percursos diferentes que podem ser feitos para, partindo de A, atingir X pela primeira vez?",
+    "resposta": "160"
+  },
+  {
+    "pergunta": "Caminhando sempre para a direita ou para cima, sobre a rede da figura, de quantas maneiras um homem pode ir do ponto A até a reta BC? \\img{img/trangulo.svg}",
+    "resposta": "256"
+  }
+]

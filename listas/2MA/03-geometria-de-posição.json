@@ -1,0 +1,61 @@
+[
+  {
+    "pergunta": "Analise as sentenças a seguir. Identifique quais são verdadeiras e quais são falsas, justificando as falsas.",
+    "itens": [
+      "O ponto não tem dimensão.",
+      "Uma reta contém infinitos pontos.",
+      "Um plano contém infinitos pontos.",
+      "Três pontos distintos e não colineares determinam um plano.",
+      "Duas retas que têm um ponto comum são concorrentes.",
+      "Duas retas que têm um único ponto comum são concorrentes.",
+      "Se duas retas não são coplanares, então elas são reversas.",
+      "Se duas retas são paralelas, então elas não têm ponto em comum.",
+      "Se duas retas distintas não são paralelas, então são concorrentes.",
+      "Uma reta e um plano secantes têm um ponto comum.",
+      "Uma reta e um plano paralelo não têm ponto comum.",
+      "Se uma reta é paralela a um plano, então ela é paralela a uma reta do plano.",
+      "Se uma reta é paralela a um plano, então ela é paralela a infinitas retas do plano.",
+      "Se uma reta é paralela a um plano, então ela é paralela a todas as retas do plano.",
+      "Dois planos secantes têm como interseção uma reta.",
+      "Se dois planos distintos têm um ponto comum então eles são secantes.",
+      "Dois planos que têm uma reta comum são secantes.",
+      "Se uma reta é perpendicular a um plano, então é perpendicular a uma reta do plano.",
+      "Se uma reta é perpendicular a um plano, então é perpendicular a todas as retas desse plano.",
+      "Uma reta é perpendicular a um plano se é perpendicular a duas retas concorrentes desse plano."
+    ],
+    "resposta": "a) V \n b) V \n c) V \n d) V\n e) F - podem ser coincidentes\n f) V \n g) V \n h) V\n i) F - podem ser reversas \n j) V \n k) V \n l) V\n m) V \n n) F - podem ser reversas\n o) V \n p) V \n q) F - os planos podem ser coincidentes\n r) V\n s) F - não são todas, são só as concorrentes com ela\n t) V"
+  },
+  {
+    "pergunta": "Um inseto percorreu sobre a superfície de um objeto, em formato de um prisma reto ABCDEFGH, com base retangular, uma trajetória poligonal, com vértices nos pontos: A-X-Y-G-F-E-X-G-E, na ordem em que foram apresentados.\\img{img/01geopos-cubo.svg}É necessário representar a projeção ortogonal do trajeto percorrido pelo inseto sobre o plano determinado pela base do prisma.\n\nA representação da projeção ortogonal do trajeto percorrido pelo inseto é",
+    "alternativas": [
+      "\\img{img/alternativas/01geopos-cubo-1.svg}",
+      "\\img{img/alternativas/01geopos-cubo-2.svg}",
+      "\\img{img/alternativas/01geopos-cubo-3.svg}",
+      "\\img{img/alternativas/01geopos-cubo-4.svg}",
+      "\\img{img/alternativas/01geopos-cubo-5.svg}"
+    ],
+    "resposta": "D"
+  },
+  {
+    "pergunta": "**(Enem/2014)** Em um jogo desenvolvido para uso no computador, objetos tridimensionais vão descendo do alto da tela até alcançarem o plano da base. O usuário pode mover ou girar cada objeto durante sua descida para posicioná-lo convenientemente no plano horizontal. Um desses objetos é formado pela justaposição de quatro cubos idênticos, formando assim um sólido rígido, como ilustrado na figura.\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_f14c9bf2a1af3b47726250e096aa234f_3648929.jpg.png}Para facilitar a movimentação do objeto pelo usuário, o programa projeta ortogonalmente esse sólido em três planos quadriculados perpendiculares entre si, durante sua descida.\n\nA figura que apresenta uma possível posição desse sólido, com suas respectivas projeções ortogonais sobre os três planos citados, durante sua descida é",
+    "alternativas": [
+      "\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_3a114c958fd8da7d894a14837948ecc3_3648929.jpg.png}",
+      "\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_fdeb2095f57f913b95147dda163806d1_3648929.jpg.png}",
+      "\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_bd79a2d466e1d062cebf3cbe4d3f3f23_3648929.jpg.png}",
+      "\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_548ff08afa0f10804f4f0343cb0a0f4b_3648929.jpg.png}",
+      "\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_69eb6d32369fba9819ab5f69bdddd887_3648929.jpg.png}"
+    ],
+    "resposta": "E"
+  },
+  {
+    "pergunta": "**(Enem/2020 Digital)** Na figura estão destacadas duas trajetórias sobre a superfície do globo terrestre, descritas ao se percorrer parte dos meridianos 1, 2 e da Linha do Equador, sendo que os meridianos 1 e 2 estão contidos em planos perpendiculares entre si. O plano a é paralelo ao que contém a Linha do Equador.\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_a6e611c1f992ed7333600b42ebe73cf1_8155039.jpg.png}A vista superior da projeção ortogonal sobre o plano a dessas duas trajetórias é",
+    "alternativas": [
+      "\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_5a31c603d20d0e471f002b29cc2c1f41_8155039.jpg.png}",
+      "\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_e105799d548bf221f807206a11080b85_8155039.jpg.png}",
+      "\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_5465bf370382a688b27dc8db0ea65640_8155039.jpg.png}",
+      "\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_a2324961192bc3363514b158754f9007_8155039.jpg.png}",
+      "\\img{https://d23vy2bv3rsfba.cloudfront.net/questoes_imagens/0_dd686844b8049c932800b5c26af495e2_8155039.jpg.png}"
+    ],
+    "resposta": "E"
+  }
+]

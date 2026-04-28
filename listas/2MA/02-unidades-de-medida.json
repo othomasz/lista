@@ -1,0 +1,67 @@
+[
+  {
+    "pergunta": "**(Enem/2016)**  A London Eye é uma enorme roda-gigante na capital inglesa. Por ser um dos monumentos construídos para celebrar a entrada do terceiro milênio, ela também é conhecida como Roda do Milênio. Um turista brasileiro, em visita à Inglaterra, perguntou a um londrino o diâmetro (destacado na imagem) da Roda do Milênio e ele respondeu que ele tem 443 pés. \\img{https://s2.static.brasilescola.uol.com.br/exercicios/2021/09/london-eye.jpg} Não habituado com a unidade pé, e querendo satisfazer sua curiosidade, esse turista consultou um manual de unidades de medidas e constatou que 1 pé equivale a 12 polegadas, e que 1 polegada equivale a 2,54 cm. Após alguns cálculos de conversão, o turista ficou surpreendido com o resultado obtido em metros.\n\nQual a medida que mais se aproxima do diâmetro da Roda do Milênio, em metro?",
+    "alternativas": [
+      "53",
+      "94",
+      "113",
+      "135",
+      "145"
+    ],
+    "resposta": "D"
+  },
+  {
+    "pergunta": "Mário sabe que sua caixa d'água está com problemas. Para a realização do reparo, foi dito a ele que a caixa d'água deveria estar, no máximo, com 625 mil centímetros cúbicos de água, o que representa um volume máximo de:",
+    "alternativas": [
+      "62,5 litros.",
+      "6,25 litros.",
+      "0,625 litros.",
+      "625 litros.",
+      "6 250 litros."
+    ],
+    "resposta": "D"
+  },
+  {
+    "pergunta": "**(Enem/2014)** A maior piscina do mundo, registrada no livro Guiness, está localizada no Chile, em San Alfonso del Mar, cobrindo um terreno de 8 hectares de área.\n\nSabe-se que 1 hectare corresponde a 1 hectômetro quadrado.\n\nQual é o valor, em metros quadrados, da área coberta pelo terreno da piscina?",
+    "alternativas": [
+      "8",
+      "80",
+      "800",
+      "8 000",
+      "80 000"
+    ],
+    "resposta": "E"
+  },
+  {
+    "pergunta": "**(Enem/2020 Digital)** É comum as cooperativas venderem seus produtos a diversos estabelecimentos. Uma cooperativa láctea destinou 4 m³ de leite, do total produzido, para análise em um laboratório da região, separados igualmente em 4000 embalagens de mesma capacidade.\n\nQual o volume de leite, em mililitro, contido em cada embalagem?",
+    "alternativas": [
+      "0,1",
+      "1",
+      "10",
+      "100",
+      "1000"
+    ],
+    "resposta": "E"
+  },
+  {
+    "pergunta": "**(Enem/2015)** Atendendo à encomenda de um mecânico, um soldador terá de juntar duas barras de metais diferentes. A solda utilizada tem espessura de 18 milímetros, conforme ilustrado na figura.\\img{https://s2.static.brasilescola.uol.com.br/exercicios/2021/09/medidas-solda.jpg}Qual o comprimento, em metros, da peça resultante após a soldagem?",
+    "alternativas": [
+      "2,0230",
+      "2,2300",
+      "2,5018",
+      "2,6800"
+    ],
+    "resposta": "D"
+  },
+  {
+    "pergunta": "**(Enem/2019)** A bula de um antibiótico infantil, fabricado na forma de xarope, recomenda que sejam ministrados, diariamente, no máximo 500 mg desse medicamento para cada quilograma de massa do paciente. Um pediatra prescreveu a dosagem máxima desse antibiótico para ser ministrada diariamente a uma criança de 20 kg pelo período de 5 dias. Esse medicamento pode ser comprado em frascos de 10 mL, 50 mL, 100 mL, 250 mL e 500 mL. Os pais dessa criança decidiram comprar a quantidade exata de medicamento que precisará ser ministrada no tratamento, evitando a sobra de medicamento. Considere que 1 g desse medicamento ocupe um volume de 1 cm³.\n\nA capacidade do frasco, em mililitro, que esses pais deverão comprar é:",
+    "alternativas": [
+      "10",
+      "50",
+      "100",
+      "250",
+      "500"
+    ],
+    "resposta": "B"
+  }
+]

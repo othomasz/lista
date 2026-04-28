@@ -1,41 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <script>
         window.MathJax = {
             tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                inlineMath: [
+                    ["$", "$"],
+                    ["\\(", "\\)"],
+                ],
+                displayMath: [
+                    ["$$", "$$"],
+                    ["\\[", "\\]"],
+                ],
+            },
+            options: {
+                enableMenu: false  // desativa o menu popup
+            },
+            chtml: {
+                fontURL: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2"
             }
         };
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
     <div class="page">
         <div class="header_bg">
             <div class="header">
                 <div class="row">
-                    <p>• lista de exercícios</p>
-                    <h1>Matrizes, Determinantes e Sistemas Lineares</h1>
+                    <p class="sla">• lista de exercícios</p>
+                    <h1>Análide Combinatória</h1>
+                    <p>PFC e permutações simples</p>
                 </div>
-                <h2 class="numero">#01</h2>
+                <h2 class="numero">#02</h2>
             </div>
         </div>
 
         <div class="content">
-
             <div class="questoes"></div>
 
             <!-- GABARITO -->
@@ -46,10 +57,8 @@
             </div>
 
             <button class="botao" onclick="salvarPDF()">Salvar em PDF</button>
-
         </div>
     </div>
-
 </body>
 
 <script>
@@ -57,52 +66,100 @@
         window.print();
     }
 
-    async function carregarQuestoes() {
-        const resposta = await fetch("questoes.json");
-        const questoes = await resposta.json();
+    function formatarTexto(texto, classeImagem) {
+        // Quebra de linha (\n )
+        let textoFormatado = texto.replace(/\n/g, "<br>");
+
+        // NEGRITO (**texto**)
+        textoFormatado = textoFormatado.replace(/\*\*(.*?)\*\*/g, "<b>$1</b>");
+
+        // IMAGENS (\img{caminho})
+        textoFormatado = textoFormatado.replace(/\\img\{(.*?)\}/g, (match, src) => {
+            return `<div class="${classeImagem}">
+                    <img src="${src}" />
+                </div>`;
+        });
+
+        return textoFormatado;
+    }
+
+    async function carregarJSON() {
+
+        // pega a rota após o #
+        let path = window.location.hash.replace("#/", "");
+
+        // página padrão
+        if (!path) {
+            path = "questoes";
+        }
+
+        // caminho do json
+        const jsonPath = `/${path}.json`;
+
+        console.log("Carregando:", jsonPath);
+
+        try {
+
+            const response = await fetch(jsonPath);
+
+            if (!response.ok) {
+                throw new Error("Arquivo não encontrado");
+            }
+
+            const data = await response.json();
+
+            carregarQuestoes(data);
+
+        } catch (erro) {
+
+            document.body.innerHTML = `
+            <h1>Erro</h1>
+            <p>${erro.message}</p>
+        `;
+        }
+    }
+
+
+    carregarJSON();
+
+    async function carregarQuestoes(questoesData) {
+        const questoes = questoesData;
+
 
         const container = document.querySelector(".questoes");
         container.innerHTML = "";
-
         questoes.forEach((q, i) => {
+
             const div = document.createElement("div");
             div.className = "questao";
 
-            let perguntaFormatada = q.pergunta.replace(/\n/g, "<br>");
+            let perguntaFormatada = formatarTexto(q.pergunta, "imagem-questao");
 
-            // Inserir imagens
-            if (q.imagens) {
-                let imgIndex = 0;
-                perguntaFormatada = perguntaFormatada.replace(/\\img/g, () => {
-                    if (q.imagens[imgIndex]) {
-                        return `<div class="imagem-questao">
-                                    <img src="${q.imagens[imgIndex++]}" />
-                                </div>`;
-                    }
-                    return "";
-                });
-            }
-            let html = `<b>Questão ${i + 1}:</b> ${perguntaFormatada}`;
+            let html = `<a href="#resposta-${i + 1}">Questão ${i + 1}:</a> ${perguntaFormatada}`;
 
-            // MÚLTIPLA ESCOLHA
-            if (q.tipo === "multipla") {
+            // ALTERNATIVAS
+            if (q.alternativas) {
                 html += `<div class="alternativas">`;
-                const letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+                const letras = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
                 q.alternativas.forEach((alt, j) => {
-                    html += `<div class="alternativa"><div class="letra">${letras[j]}</div>${alt}</div>`;
+                    let altFormatada = formatarTexto(alt, "imagem-texto");
+
+                    html += `<div class="alternativa"><div class="letra">${letras[j]}</div>${altFormatada}</div>`;
                 });
 
                 html += `</div>`;
             }
 
-            // QUESTÃO COM ITENS a), b), c)
-            if (q.tipo === "itens") {
+            // ITENS
+            if (q.itens) {
                 html += `<div class="itens">`;
-                const letras = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+                const letras = "abcdefghijklmnopqrstuvwxyz".split("");
 
                 q.itens.forEach((item, j) => {
-                    html += `<div class="item">${letras[j]}) ${item}</div>`;
+                    let itemFormatado = formatarTexto(item, "imagem-texto");
+
+                    html += `<div class="item">${letras[j]}) ${itemFormatado}</div>`;
                 });
 
                 html += `</div>`;
@@ -127,14 +184,28 @@
             listaAntiga.remove();
         }
 
-        const respostasHTML = questoes
-            .map((q, i) => `<div class="resposta"><span class="numero">${i + 1}-</span> <span class="texto">${q.resposta || "-"}</span></div>`)
-            .join("");
+        const container = document.createElement("div");
+        container.className = "gabarito-respostas";
 
-        gabaritoDiv.insertAdjacentHTML("beforeend", `<div class="gabarito-respostas">${respostasHTML}</div>`);
+        let html = "";
+
+        questoes.forEach((q, i) => {
+            let respostaFormatada = q.resposta
+                ? formatarTexto(q.resposta, "imagem-texto")
+                : "-";
+
+            html += `
+            <div class="resposta" id="resposta-${i + 1}">
+                <span class="numero">${i + 1}-</span>
+                <span class="texto">${respostaFormatada}</span>
+            </div>
+        `;
+        });
+
+        container.innerHTML = html;
+        gabaritoDiv.appendChild(container);
     }
 
-    carregarQuestoes();
 </script>
 
 </html>
